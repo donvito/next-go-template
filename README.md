@@ -1,16 +1,18 @@
 # Next.js with Go runtime as backend
 
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app) and uses the [Go runtime](https://vercel.com/docs/functions/serverless-functions/runtimes/go) of Vercel as the backend.
+This is a [Next.js](https://nextjs.org) project which uses the [Go runtime](https://vercel.com/docs/functions/serverless-functions/runtimes/go) of Vercel as the backend.
+
+The frontend retrieves data from the backend using the `/api/todos` endpoint. The Go backend uses a PostgreSQL database.
 
 ## Go backend
 
 `/api/todos.go`
 
-To access the Go backend, visit []('/api/todos')
+To access the Go backend, access [/api/todos]('/api/todos')
 
 ## You need a PostgreSQL database for this to work
 
-You can create a new one in Railway: [https://railway.com/](https://railway.com/)
+You can create a new one in Railway: [https://railway.com/](https://railway.com/) or any postgres cloud hosting service.
 
 ## Configure environment variables
 
