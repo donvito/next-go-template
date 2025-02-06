@@ -76,7 +76,7 @@ export default function Home() {
         if (!response.ok) throw new Error('Failed to update todo');
         return response.json();
       })
-      .then(updatedTodo => {
+      .then(() => {
         setTodos(currentTodos => 
           currentTodos.map(todo => 
             todo.id === id ? { ...todo, ...updatedData } : todo
