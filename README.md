@@ -48,8 +48,28 @@ alter table public.todos
 
 ## Running the development server with the Go backend  
 
+Make sure you have Go installed: [https://go.dev/](https://go.dev/). I used Go version 1.22 for this example.
+
+Run the following command to build the project. This will create a go.mod and go.sum files in your /api folder.
+```bash
+vercel build
+```
+
+Run the following command to start the development server which runs the Go API too.
 ```bash
 vercel dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+
+## To deploy your project to Vercel:
+
+1. Ensure you're logged in to Vercel CLI
+2. Run the following command in your project root:
+
+   ```bash
+   vercel deploy
+   ```
+
+3. Follow the prompts to complete the deployment
+4. Once finished, Vercel will provide a URL for your live project
