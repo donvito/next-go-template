@@ -1,4 +1,4 @@
-module handler
+module github.com/melvin/next-go-template/api
 
 go 1.23.2
 
